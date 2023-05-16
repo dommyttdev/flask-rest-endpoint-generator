@@ -1,0 +1,12 @@
+# auto generated code
+
+from flask import flask
+from flask_restx import Api, Resource
+
+app = Flask(__name__)
+api = Api(app)
+
+%RESOURCES%
+
+if __name__ == "__main__":
+    app.run()

@@ -1,0 +1,43 @@
+{
+    "endpoints": [{
+        "module": "web.User",
+        "endpoint": "/web/user",
+        "methods": {
+            "get": {
+                "request": "UserGetRequest",
+                "response": "UserResponse"
+            }, 
+            "post": {
+                "request": "UserPostRequest",
+                "response": "UserResponse"
+            }, 
+            "put": {
+                "request": "UserPutRequest",
+                "response": "UserResponse"
+            }, 
+            "delete": {
+                "request": "UserDeleteRequest",
+                "response": "UserResponse"
+            }
+        }
+    }],
+    "models": {
+        "UserRequest": {
+            "user_id": "str",
+            "user_name": "str",
+            "age": "int"
+        },
+        "UserGetRequest": {
+            "include": "UserRequest"
+        },
+        "UserPostResponse": {
+            "include": "UserRequest"
+        },
+        "UserPutRequest": {
+            "include": "UserRequest"
+        },
+        "UserDeleteRequest": {
+            "user_id": "str"
+        }
+    }
+}

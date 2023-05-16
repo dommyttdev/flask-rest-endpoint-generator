@@ -1,0 +1,3 @@
+    # auto generated %METHOD% method
+    def %method%(this):
+        return {"message": "Auto generated %METHOD% method message."}

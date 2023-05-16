@@ -1,0 +1,4 @@
+# auto generated Resource class
+@api.route("%ENDPOINT_NAME%")
+class %CLASS_NAME%(Resource):
+%METHODS%
